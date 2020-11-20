@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Welcome to my DJ Page</title>
+    <link rel="/stylesheet" href="style.css"/>
+
+  </head>
+      <h1>Welcome to my DJ Page</h1>
+  
+  <p>
+    I am going to give you some instructions to follow.
+    If you will please hover over my square. It should turn blue.
+    When you hold your mouse button down on the square it should turn red.
+    If you let the mouse button go over the square it will turn yellow.
+    Now double click your mouse on the square did it turn green?
+    Scroll the mouse somewhere in the window (not just over the square) does the square turn orange?
+</p>
+  
+  <body onwheel="scrollColor('orange')">
+    <div class="container" id="container">
+      <div class="child" id="square" onmouseover="hoverColor('blue')" onmouseout="mouseOut('silver')" onmousedown="leftClickColor('red')" onmouseup="upClickColor('yellow')" ondblclick="dblClickColor('green')">
+      </div>
+
+      
+  
+<style>
+        body{
+  height: 50%;
+  margin: 50;
+  text-float: top;
+}
+
+ .container {
+  display: flex; 
+  justify-content: center;
+  align-items: right;
+  height: 100%;
+}
+  .child {
+    width: 200px;
+    height: 200px;
+    background-color:silver;
+    float: bottom;
+  }
+  </style>
+    <script src="script.js"></script>
+  </body>
+</html>

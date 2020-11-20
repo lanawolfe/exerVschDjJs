@@ -1,0 +1,19 @@
+html,
+body {
+  height: 100%;
+  Margin: 0;
+}
+
+ .container {
+  display: flex; 
+  justify-content: bottom;
+  align-items: center;
+  height: 100%;
+}
+  .child {
+    width: 200px;
+    height: 200px;
+    background-color:brown;
+
+  }
+    
